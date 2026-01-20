@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Byker | Maletas y Accesorios Premium para Motociclistas</title>
+    <meta name="description" content="Descubre maletas artesanales, duraderas y con estilo para tu moto. Style Byker ofrece soluciones de equipaje para aventura y ciudad.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 overflow-x-hidden">
+
+    <!-- Navegación -->
+    <header class="fixed w-full z-50 bg-zinc-950/95 text-white shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold brand-font text-amber-500 tracking-tighter">
+                STYLE <span class="text-white">BYKER</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <li><a href="index.html" class="hover:text-amber-500 transition-colors">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-amber-500 transition-colors">Productos</a></li>
+                <li><a href="#nosotros" class="hover:text-amber-500 transition-colors">Nosotros</a></li>
+                <li><a href="#contacto" class="hover:text-amber-500 transition-colors">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 absolute w-full left-0 px-6 py-6 transition-all duration-300">
+            <ul class="flex flex-col space-y-4 font-semibold text-sm uppercase tracking-widest text-center">
+                <li><a href="index.html" class="block py-2 hover:text-amber-500">Inicio</a></li>
+                <li><a href="#productos" class="block py-2 hover:text-amber-500">Productos</a></li>
+                <li><a href="#nosotros" class="block py-2 hover:text-amber-500">Nosotros</a></li>
+                <li><a href="#contacto" class="block py-2 hover:text-amber-500">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-6">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Diseño que Resiste el Camino</h1>
+                <p class="text-xl md:text-2xl font-light mb-10 text-zinc-300">Maletas artesanales para motociclistas que buscan durabilidad, estilo y funcionalidad en cada kilómetro.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#productos" class="bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all shadow-lg brand-font text-lg">
+                        Ver Colección
+                    </a>
+                    <a href="#nosotros" class="bg-transparent border-2 border-white hover:bg-white hover:text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all brand-font text-lg">
+                        Nuestra Historia
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section id="productos" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Equipamiento Style Byker</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-zinc-600 max-w-2xl mx-auto italic">Cada una de nuestras maletas es fabricada a mano con materiales de alta resistencia, diseñadas para enfrentar tanto el tráfico urbano como las rutas de aventura.</p>
+            </div>
+
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Producto 1: Tank Bag -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/tankbag/600/800" alt="Maleta para tanque Style Byker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-500 text-zinc-950 px-3 py-1 text-xs font-bold brand-font">Popular</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Maleta para Tanque</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Acceso rápido a tus pertenencias. Resistente al agua y con sistema de sujeción universal reforzado.</p>
+                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Byker!%20Me%20interesa%20comprar%20la%20Maleta%20para%20Tanque." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
+                            Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Backpack -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/backpack/600/800" alt="Maleta para espalda Style Byker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Maleta para Espalda</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Ergonomía superior pensada para viajes largos. Distribución de peso balanceada y compartimento para laptop.</p>
+                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Byker!%20Me%20interesa%20comprar%20la%20Maleta%20para%20Espalda." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
+                            Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Side Bag -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/sidebag/600/800" alt="Maleta lateral Style Byker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Maleta Lateral</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Capacidad expandible para rutas de aventura. Fabricada con lona militar y acabados en cuero sintético de alta gama.</p>
+                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Byker!%20Me%20interesa%20comprar%20la%20Maleta%20Lateral." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
+                            Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Custom Bag -->
+                <div class="group bg-zinc-950 text-white border border-zinc-800 overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/custombag/600/800" alt="Maleta personalizada Style Byker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80">
+                        <div class="absolute inset-0 bg-amber-500/10 group-hover:bg-transparent transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Maleta Personalizada</h3>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">Tu visión, nuestro arte. Diseñamos maletas a medida según las especificaciones de tu moto y estilo personal.</p>
+                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Byker!%20Quiero%20información%20sobre%20la%20Maleta%20Personalizada." target="_blank" class="w-full block bg-amber-500 text-zinc-950 text-center py-3 font-bold brand-font hover:bg-white transition-colors">
+                            Consultar Diseño
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="py-24 bg-zinc-900 text-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1558979158-65a1eaa1421f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Taller Style Byker" class="rounded-lg shadow-2xl border border-zinc-700">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-8">Nacidos en el Camino</h2>
+                        <p class="text-zinc-400 text-lg mb-6 leading-relaxed">En <span class="text-amber-500 font-semibold">Style Byker</span>, no solo fabricamos equipaje; creamos compañeros de ruta.</p>
+                        <p class="text-zinc-400 text-lg mb-8 leading-relaxed">Cada pieza es cortada y ensamblada por expertos artesanos que comparten la pasión por las dos ruedas. Utilizamos remaches reforzados, herrajes de acero y telas de alta tenacidad.</p>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-amber-500"></i>
+                                <span>Materiales Ultra-Resistentes</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-zinc-300">
+                                <i class="fa-solid fa-check text-amber-500"></i>
+                                <span>Hecho a Mano</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">¿Listo para el próximo viaje?</h2>
+                <p class="text-zinc-600 mb-10 max-w-xl mx-auto">Escríbenos para asesoría personalizada o para iniciar tu pedido.</p>
+                <a href="https://wa.me/573000000000?text=Hola%20Style%20Byker!%20Quiero%20hablar%20con%20un%20asesor." target="_blank" class="inline-block bg-amber-500 text-zinc-950 font-bold py-6 px-12 rounded-sm brand-font text-2xl hover:bg-zinc-950 hover:text-white transition-all">
+                    Hablar con un Experto <i class="fa-brands fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <a href="index.html" class="text-3xl font-bold brand-font text-amber-500 block mb-6">STYLE BYKER</a>
+                <p class="text-zinc-500">Equipaje premium para entusiastas de las motos. Artesanal y resistente.</p>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-amber-500">Links</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-white transition-colors">Productos</a></li>
+                    <li><a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-amber-500">Legal</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-12 border-t border-zinc-900 mt-12 text-center text-zinc-600 text-sm">
+            <p>&copy; 2024 Style Byker. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>
