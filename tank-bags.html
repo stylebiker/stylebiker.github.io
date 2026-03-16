@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maleta para Tanque | Style Biker</title>
+    <title>Tank Bags | Style Biker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
@@ -22,7 +22,7 @@
             <a href="index.html" class="flex items-center">
                 <img src="https://ik.imagekit.io/0qajanzvl/Style%20Biker/grok-image-0c10136f-2d6f-4930-a785-fd8d1c426260.png" alt="Style Biker Logo" class="h-10 w-auto" referrerPolicy="no-referrer">
             </a>
-            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-amber-500 font-bold brand-font">Volver al Inicio</a>
+            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-red-600 font-bold brand-font">Volver al Inicio</a>
         </nav>
     </header>
 
@@ -39,7 +39,7 @@
                 
                 <!-- Thumbnails (4 additional angles + main = 5 total) -->
                 <div class="grid grid-cols-5 gap-2">
-                    <div class="border-2 border-amber-500 rounded overflow-hidden h-20 thumbnail active" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag/800/800')">
+                    <div class="border-2 border-red-600 rounded overflow-hidden h-20 thumbnail active" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag/800/800')">
                         <img src="https://picsum.photos/seed/tankbag/800/800" alt="Ángulo 1" class="w-full h-full object-cover">
                     </div>
                     <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag2/800/800')">
@@ -59,8 +59,11 @@
 
             <!-- Product Details -->
             <div class="flex flex-col justify-center">
-                <div class="inline-block bg-amber-500 text-zinc-950 px-3 py-1 text-xs font-bold brand-font mb-4 self-start">Popular</div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Maleta para Tanque</h1>
+                <div class="flex gap-2 mb-4 self-start">
+                    <div class="inline-block bg-red-600 text-zinc-950 px-3 py-1 text-xs font-bold brand-font">Popular</div>
+                    <div class="inline-block bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Tank Bags</h1>
                 <p class="text-2xl font-light text-zinc-500 mb-6">$120.000 COP</p>
                 
                 <div class="space-y-4 text-zinc-700 leading-relaxed mb-8">
@@ -74,7 +77,7 @@
                     </ul>
                 </div>
 
-                <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Me%20interesa%20comprar%20la%20Maleta%20para%20Tanque." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-4 text-lg font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <a href="https://wa.me/573165197995?text=Hola%20Style%20Biker!%20Me%20interesa%20comprar%20un%20Tank%20Bag." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-4 text-lg font-bold brand-font hover:bg-red-600 hover:text-zinc-950 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     Pedir por WhatsApp
                 </a>
                 
@@ -105,13 +108,17 @@
             // Update active state on thumbnails
             const thumbnails = document.querySelectorAll('.thumbnail');
             thumbnails.forEach(t => {
-                t.classList.remove('active', 'border-amber-500');
+                t.classList.remove('active', 'border-red-600');
                 t.classList.add('border-transparent');
             });
             
-            element.classList.add('active', 'border-amber-500');
+            element.classList.add('active', 'border-red-600');
             element.classList.remove('border-transparent');
         }
     </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573165197995?text=Hola%20Style%20Biker!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>

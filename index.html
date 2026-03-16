@@ -35,20 +35,20 @@
 
             <!-- Desktop Menu -->
             <ul class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
-                <li><a href="index.html" class="hover:text-amber-500 transition-colors">Inicio</a></li>
-                <li><a href="#productos" class="hover:text-amber-500 transition-colors">Productos</a></li>
-                <li><a href="#nosotros" class="hover:text-amber-500 transition-colors">Nosotros</a></li>
-                <li><a href="#contacto" class="hover:text-amber-500 transition-colors">Contacto</a></li>
+                <li><a href="index.html" class="hover:text-red-600 transition-colors">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-red-600 transition-colors">Productos</a></li>
+                <li><a href="#nosotros" class="hover:text-red-600 transition-colors">Nosotros</a></li>
+                <li><a href="#contacto" class="hover:text-red-600 transition-colors">Contacto</a></li>
             </ul>
         </nav>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-zinc-200 absolute w-full left-0 px-6 py-6 transition-all duration-300">
             <ul class="flex flex-col space-y-4 font-semibold text-sm uppercase tracking-widest text-center">
-                <li><a href="index.html" class="block py-2 hover:text-amber-500">Inicio</a></li>
-                <li><a href="#productos" class="block py-2 hover:text-amber-500">Productos</a></li>
-                <li><a href="#nosotros" class="block py-2 hover:text-amber-500">Nosotros</a></li>
-                <li><a href="#contacto" class="block py-2 hover:text-amber-500">Contacto</a></li>
+                <li><a href="index.html" class="block py-2 hover:text-red-600">Inicio</a></li>
+                <li><a href="#productos" class="block py-2 hover:text-red-600">Productos</a></li>
+                <li><a href="#nosotros" class="block py-2 hover:text-red-600">Nosotros</a></li>
+                <li><a href="#contacto" class="block py-2 hover:text-red-600">Contacto</a></li>
             </ul>
         </div>
     </header>
@@ -60,7 +60,7 @@
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Diseño que Resiste el Camino</h1>
                 <p class="text-xl md:text-2xl font-light mb-10 text-zinc-300">Maletas artesanales para motociclistas que buscan durabilidad, estilo y funcionalidad en cada kilómetro.</p>
                 <div class="flex flex-col md:flex-row gap-4 justify-center">
-                    <a href="#productos" class="bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all shadow-lg brand-font text-lg">
+                    <a href="#productos" class="bg-red-600 hover:bg-red-700 text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all shadow-lg brand-font text-lg">
                         Ver Colección
                     </a>
                     <a href="#nosotros" class="bg-transparent border-2 border-white hover:bg-white hover:text-zinc-950 font-bold py-4 px-10 rounded-sm transition-all brand-font text-lg">
@@ -74,65 +74,91 @@
         <section id="productos" class="py-24 bg-white">
             <div class="container mx-auto px-6 text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Equipamiento Style Biker</h2>
-                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
                 <p class="text-zinc-600 max-w-2xl mx-auto italic">Cada una de nuestras maletas es fabricada a mano con materiales de alta resistencia, diseñadas para enfrentar tanto el tráfico urbano como las rutas de aventura.</p>
             </div>
 
-            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Producto 1: Tank Bag -->
-                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                    <a href="maleta-tanque.html" class="block relative overflow-hidden h-64">
-                        <img src="https://picsum.photos/seed/tankbag/600/800" alt="Maleta para tanque Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute top-4 right-4 bg-amber-500 text-zinc-950 px-3 py-1 text-xs font-bold brand-font">Popular</div>
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1: Maletas Rígidas -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="maletas-rigidas.html" class="block relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/hardcase/600/800" alt="Maletas Rígidas Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
+                        </div>
                     </a>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Maleta para Tanque</h3>
-                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Acceso rápido a tus pertenencias. Resistente al agua y con sistema de sujeción universal reforzado.</p>
-                        <a href="maleta-tanque.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Maletas Rígidas</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">Máxima protección para tus viajes más exigentes. Soporta impactos y mantiene tu equipaje seguro.</p>
+                        <a href="maletas-rigidas.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
                             Ver más
                         </a>
                     </div>
                 </div>
 
-                <!-- Producto 2: Backpack -->
-                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="https://picsum.photos/seed/backpack/600/800" alt="Maleta para espalda Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Maleta para Espalda</h3>
-                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Ergonomía superior pensada para viajes largos. Distribución de peso balanceada y compartimento para laptop.</p>
-                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Me%20interesa%20comprar%20la%20Maleta%20para%20Espalda." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
-                            Pedir por WhatsApp
+                <!-- Producto 2: Tank Bags -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="tank-bags.html" class="block relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/tankbag/600/800" alt="Tank Bags Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Tank Bags</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">Acceso rápido a tus pertenencias. Resistente al agua y con sistema de sujeción universal reforzado.</p>
+                        <a href="tank-bags.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
                         </a>
                     </div>
                 </div>
 
-                <!-- Producto 3: Side Bag -->
-                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="https://picsum.photos/seed/sidebag/600/800" alt="Maleta lateral Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Maleta Lateral</h3>
-                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed">Capacidad expandible para rutas de aventura. Fabricada con lona militar y acabados en cuero sintético de alta gama.</p>
-                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Me%20interesa%20comprar%20la%20Maleta%20Lateral." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors">
-                            Pedir por WhatsApp
+                <!-- Producto 3: Pecheras -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="pecheras.html" class="block relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/chestbag/600/800" alt="Pecheras Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Pecheras</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">Mantén tus objetos de valor siempre a la mano y seguros. Diseño ergonómico y acceso rápido.</p>
+                        <a href="pecheras.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
                         </a>
                     </div>
                 </div>
 
-                <!-- Producto 4: Custom Bag -->
-                <div class="group bg-zinc-950 text-white border border-zinc-800 overflow-hidden hover:shadow-2xl transition-all duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="https://picsum.photos/seed/custombag/600/800" alt="Maleta personalizada Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80">
-                        <div class="absolute inset-0 bg-amber-500/10 group-hover:bg-transparent transition-all"></div>
+                <!-- Producto 4: Pierneras -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="pierneras.html" class="block relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/legbag/600/800" alt="Pierneras Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                            <div class="bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Pierneras</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">La solución perfecta para llevar tus esenciales sin cargar la espalda. Tácticas y ligeras.</p>
+                        <a href="pierneras.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
+                        </a>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-amber-500">Maleta Personalizada</h3>
-                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">Tu visión, nuestro arte. Diseñamos maletas a medida según las especificaciones de tu moto y estilo personal.</p>
-                        <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Quiero%20información%20sobre%20la%20Maleta%20Personalizada." target="_blank" class="w-full block bg-amber-500 text-zinc-950 text-center py-3 font-bold brand-font hover:bg-white transition-colors">
-                            Consultar Diseño
+                </div>
+
+                <!-- Producto 5: Accesorios -->
+                <div class="group bg-zinc-50 border border-zinc-200 overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <a href="accesorios.html" class="block relative overflow-hidden h-64">
+                        <img src="https://picsum.photos/seed/motoaccessories/600/800" alt="Accesorios Style Biker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                        </div>
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Accesorios</h3>
+                        <p class="text-zinc-600 text-sm mb-6 leading-relaxed flex-grow">Complementos esenciales para mejorar tu experiencia en cada rodada. Fundas, correas y más.</p>
+                        <a href="accesorios.html" class="w-full block bg-zinc-950 text-white text-center py-3 font-bold brand-font hover:bg-red-600 hover:text-white transition-colors mt-auto">
+                            Ver más
                         </a>
                     </div>
                 </div>
@@ -148,15 +174,15 @@
                     </div>
                     <div class="lg:w-1/2">
                         <h2 class="text-4xl md:text-5xl font-bold mb-8">Nacidos en el Camino</h2>
-                        <p class="text-zinc-400 text-lg mb-6 leading-relaxed">En <span class="text-amber-500 font-semibold">Style Biker</span>, no solo fabricamos equipaje; creamos compañeros de ruta.</p>
+                        <p class="text-zinc-400 text-lg mb-6 leading-relaxed">En <span class="text-red-600 font-semibold">Style Biker</span>, no solo fabricamos equipaje; creamos compañeros de ruta.</p>
                         <p class="text-zinc-400 text-lg mb-8 leading-relaxed">Cada pieza es cortada y ensamblada por expertos artesanos que comparten la pasión por las dos ruedas. Utilizamos remaches reforzados, herrajes de acero y telas de alta tenacidad.</p>
                         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <li class="flex items-center space-x-3 text-zinc-300">
-                                <i class="fa-solid fa-check text-amber-500"></i>
+                                <i class="fa-solid fa-check text-red-600"></i>
                                 <span>Materiales Ultra-Resistentes</span>
                             </li>
                             <li class="flex items-center space-x-3 text-zinc-300">
-                                <i class="fa-solid fa-check text-amber-500"></i>
+                                <i class="fa-solid fa-check text-red-600"></i>
                                 <span>Hecho a Mano</span>
                             </li>
                         </ul>
@@ -170,7 +196,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-5xl font-bold mb-6">¿Listo para el próximo viaje?</h2>
                 <p class="text-zinc-600 mb-10 max-w-xl mx-auto">Escríbenos para asesoría personalizada o para iniciar tu pedido.</p>
-                <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Quiero%20hablar%20con%20un%20asesor." target="_blank" class="inline-block bg-amber-500 text-zinc-950 font-bold py-6 px-12 rounded-sm brand-font text-2xl hover:bg-zinc-950 hover:text-white transition-all">
+                <a href="https://wa.me/573165197995?text=Hola%20Style%20Biker!%20Quiero%20hablar%20con%20un%20asesor." target="_blank" class="inline-block bg-red-600 text-zinc-950 font-bold py-6 px-12 rounded-sm brand-font text-2xl hover:bg-zinc-950 hover:text-white transition-all">
                     Hablar con un Experto <i class="fa-brands fa-whatsapp ml-2"></i>
                 </a>
             </div>
@@ -187,7 +213,7 @@
                 <p class="text-zinc-500">Equipaje premium para entusiastas de las motos. Artesanal y resistente.</p>
             </div>
             <div>
-                <h4 class="font-bold brand-font text-lg mb-6 text-amber-500">Links</h4>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Links</h4>
                 <ul class="space-y-4 text-zinc-500">
                     <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
                     <li><a href="#productos" class="hover:text-white transition-colors">Productos</a></li>
@@ -195,7 +221,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold brand-font text-lg mb-6 text-amber-500">Legal</h4>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Legal</h4>
                 <ul class="space-y-4 text-zinc-500">
                     <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
                     <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
@@ -214,5 +240,9 @@
         document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
     </script>
 <script type="module" src="/index.tsx"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573165197995?text=Hola%20Style%20Biker!%20Quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>
