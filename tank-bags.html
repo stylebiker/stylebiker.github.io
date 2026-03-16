@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tank Bags | Style Biker</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -59,10 +60,6 @@
 
             <!-- Product Details -->
             <div class="flex flex-col justify-center">
-                <div class="flex gap-2 mb-4 self-start">
-                    <div class="inline-block bg-red-600 text-zinc-950 px-3 py-1 text-xs font-bold brand-font">Popular</div>
-                    <div class="inline-block bg-zinc-950 text-white px-3 py-1 text-xs font-bold brand-font">¡Personalizable!</div>
-                </div>
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Tank Bags</h1>
                 <p class="text-2xl font-light text-zinc-500 mb-6">$120.000 COP</p>
                 
@@ -90,13 +87,42 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-zinc-950 text-white py-12 border-t border-zinc-900 mt-12">
-        <div class="container mx-auto px-6 flex flex-col items-center text-center">
-            <a href="index.html" class="block mb-6">
-                <img src="https://ik.imagekit.io/0qajanzvl/Style%20Biker/grok-image-f5d4b183-79be-4ff4-af38-07ce179ab700.png" alt="Style Biker Logo" class="h-16 w-auto" referrerPolicy="no-referrer">
-            </a>
-            <p class="text-zinc-500 mb-4">Equipaje premium para entusiastas de las motos. Artesanal y resistente.</p>
-            <p class="text-sm text-zinc-600">&copy; 2024 Style Biker. Todos los derechos reservados.</p>
+    <footer class="bg-zinc-950 text-white py-16 border-t border-zinc-900 mt-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-left">
+            <div>
+                <a href="index.html" class="block mb-6">
+                    <img src="https://ik.imagekit.io/0qajanzvl/Style%20Biker/grok-image-f5d4b183-79be-4ff4-af38-07ce179ab700.png" alt="Style Biker Logo" class="h-16 w-auto" referrerPolicy="no-referrer">
+                </a>
+                <p class="text-zinc-500">Equipaje premium para entusiastas de las motos. Artesanal y resistente.</p>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Enlaces</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="index.html#productos" class="hover:text-white transition-colors">Productos</a></li>
+                    <li><a href="index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                    <li><a href="privacidad.html" class="hover:text-white transition-colors">Privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white transition-colors">Términos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Síguenos</h4>
+                <ul class="space-y-4 text-zinc-500">
+                    <li><a href="https://instagram.com/stylebiker_colombia" target="_blank" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i> stylebiker_colombia</a></li>
+                    <li><a href="https://tiktok.com/@style_biker_official" target="_blank" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-tiktok text-xl"></i> style_biker_official</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61584194217777" target="_blank" class="hover:text-white transition-colors flex items-center gap-3"><i class="fa-brands fa-facebook-f text-xl"></i> Style biker colombia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold brand-font text-lg mb-6 text-red-600">Ubicación</h4>
+                <p class="text-zinc-500 flex items-start gap-3">
+                    <i class="fa-solid fa-location-dot mt-1 text-xl"></i>
+                    <span>Calle 50 sur # 77Q-23<br>Kennedy - Bogotá<br>Colombia</span>
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-12 border-t border-zinc-900 mt-12 text-center text-zinc-600 text-sm">
+            <p>&copy; 2024 Style Biker. Todos los derechos reservados.</p>
         </div>
     </footer>
 
