@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maleta para Tanque | Style Biker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        /* Simple gallery script/styles */
+        .thumbnail { cursor: pointer; opacity: 0.6; transition: opacity 0.3s; }
+        .thumbnail:hover, .thumbnail.active { opacity: 1; border-color: #f59e0b; }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+    <!-- Header -->
+    <header class="bg-white text-zinc-950 py-6 border-b border-zinc-200 shadow-sm">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://ik.imagekit.io/0qajanzvl/Style%20Biker/grok-image-0c10136f-2d6f-4930-a785-fd8d1c426260.png" alt="Style Biker Logo" class="h-10 w-auto" referrerPolicy="no-referrer">
+            </a>
+            <a href="index.html" class="text-sm uppercase tracking-widest hover:text-amber-500 font-bold brand-font">Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 max-w-5xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Image Gallery -->
+            <div class="flex flex-col gap-4">
+                <!-- Main Image -->
+                <div class="bg-white border border-zinc-200 p-2 rounded-lg shadow-sm h-96 md:h-[500px] overflow-hidden">
+                    <img id="mainImage" src="https://picsum.photos/seed/tankbag/800/800" alt="Maleta para tanque - Vista Principal" class="w-full h-full object-cover rounded">
+                </div>
+                
+                <!-- Thumbnails (4 additional angles + main = 5 total) -->
+                <div class="grid grid-cols-5 gap-2">
+                    <div class="border-2 border-amber-500 rounded overflow-hidden h-20 thumbnail active" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag/800/800')">
+                        <img src="https://picsum.photos/seed/tankbag/800/800" alt="Ángulo 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag2/800/800')">
+                        <img src="https://picsum.photos/seed/tankbag2/800/800" alt="Ángulo 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag3/800/800')">
+                        <img src="https://picsum.photos/seed/tankbag3/800/800" alt="Ángulo 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag4/800/800')">
+                        <img src="https://picsum.photos/seed/tankbag4/800/800" alt="Ángulo 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-2 border-transparent rounded overflow-hidden h-20 thumbnail" onclick="changeImage(this, 'https://picsum.photos/seed/tankbag5/800/800')">
+                        <img src="https://picsum.photos/seed/tankbag5/800/800" alt="Ángulo 5" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="flex flex-col justify-center">
+                <div class="inline-block bg-amber-500 text-zinc-950 px-3 py-1 text-xs font-bold brand-font mb-4 self-start">Popular</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Maleta para Tanque</h1>
+                <p class="text-2xl font-light text-zinc-500 mb-6">$120.000 COP</p>
+                
+                <div class="space-y-4 text-zinc-700 leading-relaxed mb-8">
+                    <p>Acceso rápido a tus pertenencias. Resistente al agua y con sistema de sujeción universal reforzado. Diseñada específicamente para adaptarse a la mayoría de los tanques de motocicletas, proporcionando un almacenamiento seguro y accesible sin interferir con la conducción.</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li>Material impermeable de alta resistencia.</li>
+                        <li>Bolsillo superior transparente para GPS o smartphone.</li>
+                        <li>Sistema de anclaje rápido por imanes o correas (incluidas).</li>
+                        <li>Detalles reflectivos para mayor seguridad nocturna.</li>
+                        <li>Capacidad expandible para viajes largos.</li>
+                    </ul>
+                </div>
+
+                <a href="https://wa.me/573000000000?text=Hola%20Style%20Biker!%20Me%20interesa%20comprar%20la%20Maleta%20para%20Tanque." target="_blank" class="w-full block bg-zinc-950 text-white text-center py-4 text-lg font-bold brand-font hover:bg-amber-500 hover:text-zinc-950 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Pedir por WhatsApp
+                </a>
+                
+                <div class="mt-6 flex items-center justify-center gap-4 text-sm text-zinc-500">
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Envíos a todo el país</span>
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg> Compra Segura</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white py-12 border-t border-zinc-900 mt-12">
+        <div class="container mx-auto px-6 flex flex-col items-center text-center">
+            <a href="index.html" class="block mb-6">
+                <img src="https://ik.imagekit.io/0qajanzvl/Style%20Biker/grok-image-f5d4b183-79be-4ff4-af38-07ce179ab700.png" alt="Style Biker Logo" class="h-16 w-auto" referrerPolicy="no-referrer">
+            </a>
+            <p class="text-zinc-500 mb-4">Equipaje premium para entusiastas de las motos. Artesanal y resistente.</p>
+            <p class="text-sm text-zinc-600">&copy; 2024 Style Biker. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(element, src) {
+            // Update main image
+            document.getElementById('mainImage').src = src;
+            
+            // Update active state on thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(t => {
+                t.classList.remove('active', 'border-amber-500');
+                t.classList.add('border-transparent');
+            });
+            
+            element.classList.add('active', 'border-amber-500');
+            element.classList.remove('border-transparent');
+        }
+    </script>
+</body>
+</html>
